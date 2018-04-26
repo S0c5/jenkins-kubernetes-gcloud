@@ -1,0 +1,1 @@
+echo 'please put here your own deploy script' && exit 1;

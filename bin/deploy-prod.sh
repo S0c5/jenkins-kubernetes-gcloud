@@ -1,0 +1,1 @@
+echo "production is not ready" && exit 1 

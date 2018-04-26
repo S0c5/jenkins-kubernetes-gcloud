@@ -1,0 +1,28 @@
+version: '3'
+services: 
+  web:
+    build: ./nginx
+    links:
+      - app
+    environment:
+      HOST_NAME: ${HOST_NAME}
+      APP_PORT: ${PORT}
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - nginx-certs:/etc/nginx/certs:ro
+    restart: "no"
+  app:
+    restart: always
+    build: ./
+    ports: 
+      - 8080:8080
+      - 50000:50000 
+    volumes:
+      - jenkins-home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+
+volumes:
+  nginx-certs:
+  jenkins-home: 

@@ -1,0 +1,14 @@
+version: '3'
+services: 
+  letsencrypt: 
+    image: pierreprinetti/certbot:latest
+    volumes:
+      - nginx-certs:/etc/letsencrypt
+    environment: 
+      domains: ${HOST_NAME}
+      email: ${EMAIL}
+    ports:
+      - 443:443
+      - 80:80
+volumes:
+  nginx-certs:
