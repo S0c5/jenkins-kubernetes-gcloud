@@ -1,6 +1,8 @@
 # jenkins-kubernetes-gcloud
 This repository has a container with a preconfigured jenkins with kubectl and gcloud tools.
 
+!(https://github.com/JMGVDEV/jenkins-kubernetes-gcloud/blob/master/Cloud_Base.jpeg)
+
 ### Configure
 
 1. Please edit config.env and add your custom domain for claim the ssl certificates with letsencrypt
