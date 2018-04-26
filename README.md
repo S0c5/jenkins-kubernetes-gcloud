@@ -1,7 +1,7 @@
 # jenkins-kubernetes-gcloud
 This repository has a container with a preconfigured jenkins with kubectl and gcloud tools.
 
-!(https://github.com/JMGVDEV/jenkins-kubernetes-gcloud/blob/master/Cloud_Base.jpeg)
+![](https://github.com/JMGVDEV/jenkins-kubernetes-gcloud/blob/master/Cloud_Base.jpeg)
 
 ### Configure
 
